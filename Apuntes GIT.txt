@@ -7,9 +7,6 @@ git clone URL_GIT
 /*Ver estado de archivos de la rama*/
 git status
 
-/*Agregar archivos para commit*/
-git add ARCHIVO (add. agrega todo)
-
 /*Saber en que rama estoy*/
 git branch
 
@@ -19,17 +16,23 @@ git branch NOMBRE_RAMA
 /*Crear rama y pasar a ella*/
 git checkout -b NOMBRE_RAMA
 
-/*Ver ultimo commit y de que rama*/
-git branch -v
-
-/*Eliminar rama*/
-git branch -d NOMBRE_RAMA
-
 /*Pasar a una rama*/
 git checkout NOMBRE_RAMA
 
 /*Ver resumen de mis ramas*/
 git show-branch
+
+/*Eliminar rama*/
+git branch -d NOMBRE_RAMA
+
+/*Agregar archivos para commit*/
+git add ARCHIVO (add. agrega todo)
+
+/*Ver ultimo commit y de que rama*/
+git branch -v
+
+/*Devolver un commit*/
+git reset --soft HEAD~NUMERO_COMMIT (1)
 
 /*Fusionar dos ramas en mi proyecto*/
 git merge NOMBRE_RAMA_FUSION -m 'Mensaje del merge'
@@ -37,14 +40,13 @@ git merge NOMBRE_RAMA_FUSION -m 'Mensaje del merge'
 /*Diferencia entre dos ramas*/
 git diff --stat RAMA_1 RAMA_2
 
-/*Deshacer un Merge*/
+/*Deshacer un Merge (ultimo merge)*/
 git reset --hard HEAD
 
-/*Subir cambios al Servidor*/
+/*Subir (publicar) cambios al Servidor*/
 git push origin NOMBRE_RAMA
-
-/*Devolver un commit*/
-git reset --soft HEAD~NUMERO_COMMIT (1)
 
 /*Bajar cambios del servidor*/
 git pull origin master
+
+
