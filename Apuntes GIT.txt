@@ -49,4 +49,11 @@ git push origin NOMBRE_RAMA
 /*Bajar cambios del servidor*/
 git pull origin master
 
+/*Ver historial de commits en mis ramas*/
+git log
 
+/*Ver historial detallado de commits en mis ramas*/
+git log --decorate
+
+/*Ver todos los commits por rama de forma grafica*/
+git log --graph --decorate --oneline --all
