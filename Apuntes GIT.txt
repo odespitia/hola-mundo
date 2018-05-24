@@ -57,3 +57,12 @@ git log --decorate
 
 /*Ver todos los commits por rama de forma grafica*/
 git log --graph --decorate --oneline --all
+
+/*Eliminar archivos del commit o repositorio*/
+git rm NOMBRE_ARCHIVO
+
+/*Eliminar archivos basura, log, temporales, cosas sin uso*/
+git gc
+
+/*Modificar el comentario de un commit*/
+git commit --amend
