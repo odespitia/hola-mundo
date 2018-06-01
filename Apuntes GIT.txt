@@ -70,4 +70,6 @@ git commit --amend
 /*Eliminar un Repositorio*/
 rm -rf NOMBRE_REPOSITORIO
 
-/*-*/
+/*-1-*/
+
+/*-2-*/
