@@ -66,3 +66,6 @@ git gc
 
 /*Modificar el comentario de un commit*/
 git commit --amend
+
+/*Eliminar un Repositorio*/
+rm -rf NOMBRE_REPOSITORIO
